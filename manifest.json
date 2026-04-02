@@ -1,0 +1,20 @@
+{
+  "name": "Mahabharata – The Great Epic",
+  "short_name": "Mahabharata",
+  "description": "Learn about the Mahabharata – characters, story, family tree, and Bhagavad Gita",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDF6E3",
+  "theme_color": "#7B1C1C",
+  "orientation": "any",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "categories": ["education", "books", "religion"],
+  "lang": "en",
+  "shortcuts": [
+    { "name": "Characters", "url": "/#characters", "description": "Meet the characters" },
+    { "name": "Bhagavad Gita", "url": "/#gita", "description": "Read Gita verses" }
+  ]
+}

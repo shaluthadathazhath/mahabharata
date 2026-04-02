@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahabharata – The Great Epic of Bharat</title>
+  <meta name="description" content="Explore the Mahabharata – characters, family tree, story chapters, and Bhagavad Gita verses. A guide for all ages." />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#7B1C1C" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="navbar">
+  <div class="nav-brand">
+    <span class="nav-om">ॐ</span>
+    <span class="nav-title">Mahabharata</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="nav-link active">Home</a></li>
+    <li><a href="#characters" class="nav-link">Characters</a></li>
+    <li><a href="#family-tree" class="nav-link">Family Tree</a></li>
+    <li><a href="#story" class="nav-link">The Story</a></li>
+    <li><a href="#gita" class="nav-link">Bhagavad Gita</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="section hero-section">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-om">ॐ</div>
+    <h1 class="hero-title">महाभारत</h1>
+    <h2 class="hero-subtitle">Mahabharata</h2>
+    <p class="hero-tagline">The Great Epic of Bharat — A Story of Duty, Devotion & Dharma</p>
+    <p class="hero-desc">Journey through one of humanity's greatest stories — a tale of family, courage, wisdom, and the eternal quest for righteousness. Written by the sage Vyasa, the Mahabharata contains over 100,000 verses and is the longest epic poem ever composed.</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">18</span><span class="stat-label">Parvas (Books)</span></div>
+      <div class="stat"><span class="stat-num">100K+</span><span class="stat-label">Verses (Shlokas)</span></div>
+      <div class="stat"><span class="stat-num">18</span><span class="stat-label">Days of War</span></div>
+      <div class="stat"><span class="stat-num">700</span><span class="stat-label">Gita Verses</span></div>
+    </div>
+    <div class="scroll-hint">
+      <span>Explore below</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </div>
+</section>
+
+<!-- CHARACTERS -->
+<section id="characters" class="section characters-section">
+  <div class="section-header">
+    <h2 class="section-title">The Great Characters</h2>
+    <p class="section-subtitle">Meet the heroes, warriors, sages, and gods of this timeless epic</p>
+  </div>
+
+  <div class="char-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="pandava">Pandavas</button>
+    <button class="filter-btn" data-filter="kaurava">Kauravas</button>
+    <button class="filter-btn" data-filter="divine">Divine</button>
+    <button class="filter-btn" data-filter="sage">Sages & Elders</button>
+  </div>
+
+  <div class="char-grid" id="charGrid"></div>
+
+  <!-- Character Modal -->
+  <div class="modal-overlay" id="charModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAMILY TREE -->
+<section id="family-tree" class="section tree-section">
+  <div class="section-header">
+    <h2 class="section-title">The Kuru Family Tree</h2>
+    <p class="section-subtitle">How the great families of Mahabharata are connected</p>
+  </div>
+  <div class="tree-container">
+    <div class="tree-legend">
+      <span class="legend-item pandava">Pandava Line</span>
+      <span class="legend-item kaurava">Kaurava Line</span>
+      <span class="legend-item divine">Divine / Ancestor</span>
+    </div>
+    <div class="tree-wrapper" id="familyTree"></div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="section story-section">
+  <div class="section-header">
+    <h2 class="section-title">The Story of Mahabharata</h2>
+    <p class="section-subtitle">The great tale told chapter by chapter — suitable for all ages</p>
+  </div>
+  <div class="story-grid" id="storyGrid"></div>
+</section>
+
+<!-- BHAGAVAD GITA -->
+<section id="gita" class="section gita-section">
+  <div class="section-header">
+    <h2 class="section-title">Bhagavad Gita</h2>
+    <p class="section-subtitle">The Song of God — 700 verses of timeless wisdom spoken by Krishna to Arjuna</p>
+  </div>
+  <div class="gita-intro">
+    <p>On the battlefield of Kurukshetra, when Arjuna was overwhelmed with grief and refused to fight, Lord Krishna imparted the divine wisdom of the Bhagavad Gita. This sacred dialogue spans 18 chapters and covers the essence of life, duty, devotion, and liberation.</p>
+  </div>
+  <div class="gita-chapters" id="gitaChapters"></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-om">ॐ</div>
+  <p class="footer-text">This site is dedicated to sharing the authentic teachings of the Mahabharata.<br/>
+  Content sourced from the Critical Edition (BORI), Kisari Mohan Ganguli's translation, and Swami Prabhupada's Bhagavad Gita As It Is.</p>
+  <p class="footer-note">🕉️ Sarve Bhavantu Sukhinaḥ — May all beings be happy</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
