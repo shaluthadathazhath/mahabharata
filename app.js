@@ -29,30 +29,35 @@ window.addEventListener('scroll', () => {
 });
 
 // ── CHARACTERS ──
+// Modify renderCharacters in app.js
 function renderCharacters(filter = 'all') {
   const grid = document.getElementById('charGrid');
   grid.innerHTML = '';
-  const chars = filter === 'all' ? CHARACTERS : CHARACTERS.filter(c => c.group === filter);
-  chars.forEach((char, i) => {
-    const card = document.createElement('div');
-    card.className = `char-card char-${char.group}`;
-    card.style.animationDelay = `${i * 0.06}s`;
-    card.innerHTML = `
-      <div class="char-emoji" style="background:${char.color}22; border-color:${char.color}44">${char.emoji}</div>
-      <div class="char-sanskrit">${char.sanskrit}</div>
-      <h3 class="char-name">${char.name}</h3>
-      <div class="char-title-badge" style="color:${char.color}">${char.title}</div>
-      <p class="char-desc">${char.shortDesc}</p>
-      <div class="char-group-badge ${char.group}">${char.group.charAt(0).toUpperCase() + char.group.slice(1)}</div>
-      <button class="char-learn-btn" data-id="${char.id}" style="border-color:${char.color}; color:${char.color}">
-        Learn More →
-      </button>
+  
+  if (filter === 'kaurava') {
+    const drawer = document.createElement('div');
+    drawer.className = 'kaurava-drawer';
+    drawer.innerHTML = `
+      <button id="toggleKauravas" class="drawer-btn">Show all 100 Brothers & Sister ▼</button>
+      <div id="kauravaList" class="hidden">${KAURAVA_BROTHERS.join(', ')}</div>
     `;
-    grid.appendChild(card);
-  });
+    grid.appendChild(drawer);
+    document.getElementById('toggleKauravas').addEventListener('click', () => {
+      document.getElementById('kauravaList').classList.toggle('hidden');
+    });
+  }
 
-  document.querySelectorAll('.char-learn-btn').forEach(btn => {
-    btn.addEventListener('click', () => openCharModal(btn.dataset.id));
+  const chars = filter === 'all' ? CHARACTERS : CHARACTERS.filter(c => c.group === filter);
+  // ... existing rendering code ...
+}
+
+// Add a function to link family tree clicks to modals
+function linkFamilyToCharacters() {
+  document.querySelectorAll('.family-node').forEach(node => {
+    node.addEventListener('click', () => {
+      const charId = node.dataset.id;
+      if (charId) openCharModal(charId);
+    });
   });
 }
 

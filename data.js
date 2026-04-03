@@ -3,7 +3,18 @@
 // Sources: BORI Critical Edition, Ganguli Translation (1883-96),
 //          Bhagavad Gita As It Is (Prabhupada), Valmiki/Vyasa texts
 // ============================================================
+// Add these constants at the top of data.js
+const KAURAVA_BROTHERS = [
+  "Duryodhana", "Dushasana", "Vikarna", "Chitrasena", "Vivimsati", "Dussaha", "Durmukha", "Durmarshana", "Vivitsu", "Jalasandha", "Sama", "Saha", "Vinda", "Anuvinda", "Durdharsha", "Subahu", "Dushpradharshana", "Durmarshana", "Durmukha", "Dushkarna", "Karna", "Chitra", "Upachitra", "Chitraksba", "Charuchitra", "Sarasana", "Durmada", "Durvigaha", "Vivitsu", "Vikalanana", "Urnanabha", "Sunabha", "Nanda", "Upananda", "Chitrabana", "Chitravarman", "Suvarman", "Durvilochana", "Ayobahu", "Mahabahu", "Chitrangada", "Chitrakuvala", "Bhimavega", "Bhimabala", "Balaki", "Balavardhana", "Ugrayudha", "Bhimaratha", "Suratha", "Karna", "Dhurdhara", "Dhurmukha", "Dhurjaya", "Durvirocha", "Duryodhana", "Dushasana", "Vikarna", "Sama", "Saha", "Vinda", "Anuvinda", "Durdharsha", "Subahu", "Dushpradharshana", "Durmarshana", "Durmukha", "Dushkarna", "Karna", "Chitra", "Upachitra", "Chitraksba", "Charuchitra", "Sarasana", "Durmada", "Durvigaha", "Vivitsu", "Vikalanana", "Urnanabha", "Sunabha", "Nanda", "Upananda", "Chitrabana", "Chitravarman", "Suvarman", "Durvilochana", "Ayobahu", "Mahabahu", "Chitrangada", "Chitrakuvala", "Bhimavega", "Bhimabala", "Balaki", "Balavardhana", "Ugrayudha", "Bhimaratha", "Suratha", "Karna", "Dushala (Sister)", "Yuyutsu (Half-brother)"
+];
 
+const FAMILY_LINKS = [
+  { parent: "Shantanu", wife: "Ganga", children: ["Bhishma"] },
+  { parent: "Shantanu", wife: "Satyavati", children: ["Chitrangada", "Vichitravirya"] },
+  { parent: "Vichitravirya", wife: "Ambika", children: ["Dhritarashtra"] },
+  { parent: "Vichitravirya", wife: "Ambalika", children: ["Pandu"] },
+  { parent: "Vichitravirya", wife: "Maid", children: ["Vidura"] }
+];
 const CHARACTERS = [
   // ── PANDAVAS ──
   {

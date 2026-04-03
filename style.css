@@ -611,3 +611,13 @@ body {
   .char-grid { grid-template-columns: 1fr; }
   .section { padding: 3rem 1rem; }
 }
+/* Add to the bottom of style.css */
+.about-section { background: var(--parchment); border-bottom: 2px solid var(--gold); }
+.intro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.intro-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: var(--shadow); border-top: 4px solid var(--crimson); }
+.glossary-container { margin-top: 3rem; padding: 2rem; background: var(--deep-crimson); color: var(--gold); border-radius: 12px; }
+.glossary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.kaurava-drawer { grid-column: 1 / -1; text-align: center; margin: 2rem 0; }
+.drawer-btn { background: var(--gold); color: white; padding: 12px 24px; border: none; border-radius: 50px; cursor: pointer; font-family: 'Cinzel', serif; }
+.hidden { display: none; }
+#kauravaList { margin-top: 1rem; font-size: 0.9rem; line-height: 1.8; color: var(--crimson); background: #fff; padding: 1rem; border-radius: 8px; }
