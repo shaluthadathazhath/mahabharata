@@ -250,7 +250,7 @@ function renderFamilyTree() {
     <div class="ftree-row">
       ${node('bhishma','sage')}
       <div style="display:flex;align-items:center;padding:0 .5rem;color:var(--muted);font-size:.7rem">(half-brothers)</div>
-      ${node('chitrangada','ancestor')}
+      ${node('chitrāngada','ancestor')}
       <div style="display:flex;align-items:center;padding:0 .25rem;color:var(--muted);font-size:.7rem">·</div>
       ${node('vichitravirya','ancestor')}
     </div>
@@ -296,7 +296,11 @@ function renderFamilyTree() {
           ${node('dushasana','kaurava')}
           ${node('vikarna','kaurava')}
         </div>
-        <div style="font-size:.65rem;color:var(--muted);font-style:italic">+ 97 more brothers & 1 sister (Dushala)</div>
+        <div onclick="openCharModal('duryodhana')" 
+             style="font-size:.65rem;color:var(--muted);font-style:italic;cursor:pointer;text-decoration:underline;text-underline-offset:2px;" 
+             title="Click to see all 100 Kauravas">
+          + 97 more brothers &amp; 1 sister (Dushala) 👆
+        </div>
       </div>
 
       <div style="display:flex;align-items:center;padding:0 1rem;color:var(--muted);font-size:.9rem">⚔️</div>
