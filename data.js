@@ -70,7 +70,7 @@ const CHARACTERS = [
     facts:["One of the seven immortals — said to be alive today","Dictated the Mahabharata to Lord Ganesha who wrote it down","Compiled all four Vedas into their current form","Composed 18 Puranas and the Brahma Sutras","Biological grandfather of BOTH Pandavas and Kauravas","His birthday = Guru Purnima, celebrated across India"],
     significance:"Vyasa is the author, grandfather, and divine witness of the entire Mahabharata." },
 
-  { id:"chitrāngada", name:"Chitrāngada", sanskrit:"चित्राङ्गद", title:"The First Prince", group:"ancestor", emoji:"⚔️", color:"#4E342E",
+  { id:"chitrangada", name:"Chitrāngada", sanskrit:"चित्राङ्गद", title:"The First Prince", group:"ancestor", emoji:"⚔️", color:"#4E342E",
     parents:"King Shantanu & Satyavati", spouse:"None — died in battle", children:"None",
     weapon:"Sword and bow",
     shortDesc:"Elder son of Shantanu and Satyavati. Died in a 3-year battle with a celestial warrior of the same name.",
@@ -333,7 +333,17 @@ const CHARACTERS = [
     fullDesc:"Sanjaya was the charioteer and trusted minister of King Dhritarashtra. He was a devoted disciple of the sage Vyasa.\n\nOn the eve of the Kurukshetra war, Vyasa offered Dhritarashtra the gift of divine sight to witness the battle. Dhritarashtra declined — perhaps afraid of what he would see. So Vyasa gave Sanjaya the power of divine vision and telepathic sight, so he could narrate every detail of the war to the blind king in real-time.\n\nSanjaya narrated the entire 18-day war to Dhritarashtra — including, most importantly, the Bhagavad Gita. The very first line of the Gita is Dhritarashtra speaking to Sanjaya: 'Dhritarashtra uvaca: Dharmakshetre Kurukshetre...' — 'Dhritarashtra said: In the field of dharma, in Kurukshetra...'\n\nSanjaya is the bridge between the divine events and the blind king — and thus between the epic and all future readers. Without Sanjaya, the Bhagavad Gita would not have been recorded.",
     kidFriendly:"Sanjaya was a very special man who was given magical eyes that could see everything happening far away in the war! He sat next to the blind king Dhritarashtra and described every single moment of the battle in real-time. The Bhagavad Gita begins with the blind king asking Sanjaya what was happening. Sanjaya is the reason we know what Krishna said to Arjuna on the battlefield!",
     facts:["Given divine sight by the sage Vyasa to narrate the war","The Bhagavad Gita literally opens with Dhritarashtra's question to him","Could see events happening hundreds of miles away","His narration is the reason the Bhagavad Gita was recorded for posterity"],
-    significance:"Sanjaya is the narrator who brings the divine events of Kurukshetra to us — the ultimate witness." }
+    significance:"Sanjaya is the narrator who brings the divine events of Kurukshetra to us — the ultimate witness." },
+	
+  { id:"kripa", name:"Kripacharya", sanskrit:"कृपाचार्य", title:"The Immortal Teacher",
+  group:"sage", emoji:"🏹", color:"#4e342e",
+  parents:"Sage Sharadvana (Gautama)", spouse:"Kripi (sister married Drona)",
+  children:"None mentioned", weapon:"All weapons — immortal master archer",
+  shortDesc:"The royal teacher of Hastinapura. One of the seven immortals. Fought for the Kauravas but survived the war.",
+  fullDesc:"Kripacharya was the royal weapons teacher of Hastinapura before Drona. Born miraculously along with his twin sister Kripi (who later married Drona), he was raised by King Shantanu. He taught both Pandavas and Kauravas and is one of the Chiranjivi — seven immortals said to be alive today. He fought on the Kaurava side but survived the war.",
+  kidFriendly:"Kripacharya was one of the first great teachers of the royal princes. He is one of the seven immortal beings from the Mahabharata who are said to still be alive today!",
+  facts:["One of the seven immortals (Chiranjivi)","Twin brother of Kripi, who married Drona","Was the royal teacher before Dronacharya","Survived the Kurukshetra war"],
+  significance:"Kripacharya represents continuity — the undying tradition of righteous teaching across generations." },
 ];
 
 // ── GLOSSARY ──

@@ -250,7 +250,7 @@ function renderFamilyTree() {
     <div class="ftree-row">
       ${node('bhishma','sage')}
       <div style="display:flex;align-items:center;padding:0 .5rem;color:var(--muted);font-size:.7rem">(half-brothers)</div>
-      ${node('chitrāngada','ancestor')}
+      ${node('chitrangada','ancestor')}
       <div style="display:flex;align-items:center;padding:0 .25rem;color:var(--muted);font-size:.7rem">·</div>
       ${node('vichitravirya','ancestor')}
     </div>
